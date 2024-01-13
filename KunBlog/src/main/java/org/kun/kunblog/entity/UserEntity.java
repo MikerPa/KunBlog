@@ -16,16 +16,31 @@
 
 package org.kun.kunblog.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+
 /**
- * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
+ * @author yt
  */
 @Data
-public class User {
+@TableName("user")
+public class UserEntity {
 
-    private String name;
+    private Integer id;
 
-    private Integer age;
+    private String userName;
 
+    private String passWord;
+
+    private String phoneNum;
+
+    private String account;
+
+    private LocalDateTime createTime;
+
+    private LocalDateTime updateTime;
+
+    private Boolean isDel;
 }
