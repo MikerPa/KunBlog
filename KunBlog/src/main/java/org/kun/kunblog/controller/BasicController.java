@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-package org.kun.kunblog.demos.web;
+package org.kun.kunblog.controller;
 
+import org.kun.kunblog.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;

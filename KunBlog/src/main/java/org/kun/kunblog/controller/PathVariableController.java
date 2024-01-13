@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.kun.kunblog.demos.web;
+package org.kun.kunblog.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
