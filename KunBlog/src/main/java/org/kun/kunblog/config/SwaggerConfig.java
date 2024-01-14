@@ -50,14 +50,14 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
                 .enable(b) //配置是否齐用Swagger
                 .select()//通过.select()方法 配置接口
-                .apis(RequestHandlerSelectors.basePackage("com.fan.swagger.controller"))
+                .apis(RequestHandlerSelectors.basePackage("org.kun.kunblog.controller"))
                 //RequestHandlerSelectors 配置要扫描接口的方式
                 //basePackage 指定扫描的包
                 //any():扫描全服
                 //none(): 不扫描
                 //withClassAnnnotation  扫描类上的注解
-                // 配置如何通过path过滤,即这里只扫描请求以/fan开头的接口
-                .paths(PathSelectors.ant("/fan/**"))
+                // 配置如何通过path过滤,即这里只扫描请求以/api开头的接口
+                .paths(PathSelectors.ant("/api/**"))
                 .build();//工厂模式
     }
 

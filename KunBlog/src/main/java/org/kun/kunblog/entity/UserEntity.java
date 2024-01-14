@@ -25,7 +25,7 @@ import java.time.LocalDateTime;
  * @author yt
  */
 @Data
-@TableName("user")
+@TableName("t_user")
 public class UserEntity {
 
     private Integer id;

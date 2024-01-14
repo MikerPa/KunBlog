@@ -26,7 +26,7 @@ public class UserController {
 
     @GetMapping
     @ApiOperation("获取用户")
-    public Result<UserDto> getUser(@RequestParam("id") String id){
+    public Result<UserDto> getUser(@RequestParam("id") Integer id){
         return Result.ok(userService.getUser(id));
     }
 }

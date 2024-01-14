@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserDao, UserEntity> implements UserService {
     @Override
-    public UserDto getUser(String id) {
+    public UserDto getUser(Integer id) {
         UserEntity userEntity = baseMapper.selectOne(new LambdaQueryWrapper<UserEntity>().eq(UserEntity::getId, id));
         UserDto user = BeanUtil.toBean(userEntity, UserDto.class);
         return user;
